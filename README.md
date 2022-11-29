@@ -1,7 +1,7 @@
 This is a bot used to automate the process of Membean, the online vocab tester. <br />
 This bot is only to be used on training sessions, not quizzes. <br />
-The creator of this bot is not liable for any consequences a user may face as a result of its use. By using this bot you automatically agree to these terms. <br />
-
+Feel free to submit bug reports or troubleshooting help to the issues tab. <br />
+<br />
 
 HOW TO USE:
 1. Open the most recent version and copy the code
@@ -9,13 +9,18 @@ HOW TO USE:
 3. Paste the code into the console but DO NOT PRESS ENTER
 4. Being your session
 5. As soon as you begin the session, click into the console and press enter. The bot will automatically activate and will start reporting info to the console
-
+<br />
 
 CONTROL:  <br />
 The bot creates two buttons at the bottom left of the screen, these buttons will disapper once you end the session. <br />
 Button #1: Defaults to "On", if set to "Off" it will stop the bot. <br />
 Button #2: Defaults to "Skip: On", will "wait out" 10% of questions in order to fabricate a lower accuracy score. <br />
 If set to "Skip: Off" the bot will answer every question correctly. <br />
+<br />
 
+Browser compatibility:  <br />
+If you cannot open the console, you might want to consider switching to a 3rd party browser such as Opera GX to avoid restrictions set by system admins. <br />
+<br />
+<br />
 
-If you cannot open the console, you might want to consider switching to a 3rd party browser such as Opera GX to avoid restrictions set by system admins.
+The creator of this bot is not liable for any consequences a user may face as a result of its use. By using this bot you automatically agree to these terms. <br />
