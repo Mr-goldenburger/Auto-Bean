@@ -1,6 +1,6 @@
-This is a bot used to automate the process of Membean, the online vocab tester
-This bot is only to be used on training sessions, not quizzes
-The creator of this bot is not liable for any consequences a user may face as a result of its use. By using this bot you automatically agree to this term.
+This is a bot used to automate the process of Membean, the online vocab tester.
+This bot is only to be used on training sessions, not quizzes.
+The creator of this bot is not liable for any consequences a user may face as a result of its use. By using this bot you automatically agree to these terms.
 
 
 HOW TO USE:
