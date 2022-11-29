@@ -7,12 +7,12 @@ HOW TO USE:
 1. Open the most recent version and copy the code
 2. Open membean and once you are on the "session duration" screen, use Ctrl + Shift + I to open the console
 3. Paste the code into the console but DO NOT PRESS ENTER
-4. Being your session
+4. Begin your session
 5. As soon as you begin the session, click into the console and press enter. The bot will automatically activate and will start reporting info to the console
 <br />
 
 CONTROL:  <br />
-The bot creates two buttons at the bottom left of the screen, these buttons will disapper once you end the session. <br />
+The bot creates two buttons at the bottom left of the screen, these buttons will disappear once you end the session. <br />
 Button #1: Defaults to "On", if set to "Off" it will stop the bot. <br />
 Button #2: Defaults to "Skip: On", will "wait out" 10% of questions in order to fabricate a lower accuracy score. <br />
 If set to "Skip: Off" the bot will answer every question correctly. <br />
