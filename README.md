@@ -4,7 +4,7 @@ Feel free to submit bug reports or troubleshooting help to the issues tab. <br /
 <br />
 
 HOW TO USE:
-1. Open the most recent version and copy the code
+1. Open the most recent/desired version and copy the code
 2. Open membean and once you are on the "session duration" screen, use Ctrl + Shift + I to open the console
 3. Paste the code into the console but DO NOT PRESS ENTER
 4. Begin your session
