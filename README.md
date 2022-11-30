@@ -14,7 +14,7 @@ HOW TO USE:
 CONTROL:  <br />
 The bot creates two buttons at the bottom left of the screen, these buttons will disappear once you end the session. <br />
 Button #1: Defaults to "On", if set to "Off" it will stop the bot. <br />
-Button #2: Defaults to "Skip: On", will "wait out" 10% of questions in order to fabricate a lower accuracy score. <br />
+Button #2: Defaults to "Skip: On", will "wait out" some questions in order to fabricate a lower accuracy score. <br />
 If set to "Skip: Off" the bot will answer every question correctly. <br />
 <br />
 
