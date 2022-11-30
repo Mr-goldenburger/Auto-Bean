@@ -19,7 +19,7 @@ If set to "Skip: Off" the bot will answer every question correctly. <br />
 <br />
 
 Github Navigation: <br />
-Tested versions are posted on the Stable Builds branch (Alongside the ReadMe and UpdateLog), while untested and unfinished builds are posted on the In-Progress Builds branch. <br />
+Tested versions are posted on the main branch (Alongside the ReadMe and UpdateLog), while untested and unfinished builds are posted on the In-Progress Builds folder. <br />
 
 Browser compatibility:  <br />
 If you cannot open the console, you might want to consider switching to a 3rd party browser such as Opera GX to avoid restrictions set by system admins. <br />
