@@ -42,13 +42,16 @@ document.body.appendChild(object.div);
 document.getElementById("div").appendChild(object.button1);
 document.getElementById("div").appendChild(object.button2);
 
+var accu = 0
 var targ_accu = 0
-var dis_accu = 0
-while (targ_accu < .90) {
-	targ_accu = Math.random()
-	if (targ_accu > .90) {
+var disp_accu = 0
+while (accu < .95) {
+	accu = Math.random();
+	if (accu > .95) {
+		targ_accu = accu - 0.06;
 		targ_accu = targ_accu.toFixed(2);
-		console.log("Session Accuracy Target is " + targ_accu +"%") 
+		disp_accu = targ_accu * 100;
+		console.log("Session Accuracy Target is " + targ_accu +"%");
   }
 }
 
