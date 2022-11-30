@@ -43,10 +43,12 @@ document.getElementById("div").appendChild(object.button1);
 document.getElementById("div").appendChild(object.button2);
 
 var targ_accu = 0
+var dis_accu = 0
 while (targ_accu < .90) {
-  targ_accu = Math.random()
-  if (targ_accu > .90) {
-     console.log("Session Accuracy Target is " + targ_accu +"%") 
+	targ_accu = Math.random()
+	if (targ_accu > .90) {
+		targ_accu = targ_accu.toFixed(2);
+		console.log("Session Accuracy Target is " + targ_accu +"%") 
   }
 }
 
