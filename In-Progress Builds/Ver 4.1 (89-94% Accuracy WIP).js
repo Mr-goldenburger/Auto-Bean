@@ -51,7 +51,7 @@ while (accu < .95) {
 		targ_accu = accu - 0.06;
 		targ_accu = targ_accu.toFixed(2);
 		disp_accu = targ_accu * 100;
-		console.log("Session Accuracy Target is " + targ_accu +"%");
+		console.log("Session Accuracy Target is " + disp_accu +"%");
   }
 }
 
@@ -60,7 +60,7 @@ function test() {
 	if(bool.bot == true) {
 		if(document.Pass) {
 			bool.bot = false;
-			console.log("Pass element found");
+			console.log("Question answer found");
 			set("click");
 		} else if (document.getElementById("next-btn")) {
 			set("stop");
@@ -72,13 +72,13 @@ function test() {
 			document.getElementById("next-btn").click();
 			set("test");
 		} else {
-			console.log("No elements found");
+			console.log("No content detected");
 		}
 	}
 } function set(type) {
 	if(type == "click") {//waits time to click
 		let rand = Math.floor(Math.random() * (26 - 10)) + 10;
-if(Math.random() > 0.9 && bool.skip == true) {
+if(Math.random() > targ_accu && bool.skip == true) {
 			console.log("skipping question");
 			setTimeout(() => {set("test")}, 35000);
 		}
@@ -97,7 +97,7 @@ if(Math.random() > 0.9 && bool.skip == true) {
 	}
 } function press() {
 	document.Pass.click();
-	console.log("Clicked");
+	console.log("Question answered");
 	set("test");
 	
 } 
