@@ -14,4 +14,4 @@ Ver 4.02: <br />
 This version added new console status updates to make the operation of the bot easier to understand. <br />
 
 Ver 4.1: <br />
-This version added some random deviation to the answer accuracy. At the beginning of the session the bot picks a random percentage between 89% and 94% to target for question accuracy. The bot will get roughly the defined percentage of questions correct. Adding some randomness to your session accuracy. Some console updates were also implemented. <br />
+This version added some random deviation to the answer accuracy. At the beginning of the session the bot picks a random percentage between 89% and 94% to target for question accuracy. The bot will get roughly the defined percentage of questions correct, adding some randomness to your session accuracy. Some console updates were also implemented. <br />
