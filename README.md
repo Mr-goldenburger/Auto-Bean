@@ -4,10 +4,11 @@ Feel free to submit bug reports or troubleshooting help to the issues tab. <br /
 <br />
 
 HOW TO USE:
-1. Open the most recent/desired version and copy the code
-2. Open membean and once you are on the "session duration" screen, use Ctrl + Shift + I to open the console
-3. Paste the code into the console but DO NOT PRESS ENTER
-4. Begin your session
+1. Open the most recent/desired version and copy the code <br />
+    - To find more specific info on what each version changes, check the UpdateLog.md file. <br />
+2. Open membean and once you are on the "session duration" screen, use Ctrl + Shift + I to open the console <br />
+3. Paste the code into the console but DO NOT PRESS ENTER <br />
+4. Begin your session <br />
 5. As soon as you begin the session, click into the console and press enter. The bot will automatically activate and will start reporting info to the console
 <br />
 
