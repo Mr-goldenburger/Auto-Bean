@@ -42,6 +42,7 @@ document.body.appendChild(object.div);
 document.getElementById("div").appendChild(object.button1);
 document.getElementById("div").appendChild(object.button2);
 
+var no_content = 0
 var accu = 0
 var targ_accu = 0
 var disp_accu = 0
@@ -71,20 +72,25 @@ function test() {
 			x[2].click();
 			document.getElementById("next-btn").click();
 			set("test");
+		} else if (no_content >= 1000) {
+			console.log("No question detected. Reattempting...");
+			no_content = 0
 		} else {
-			console.log("No content detected");
+			console.log("Scanning for question");
+			no_content = no_content + 1				
 		}
 	}
 } function set(type) {
 	if(type == "click") {//waits time to click
+		no_content = 0
 		let rand = Math.floor(Math.random() * (26 - 10)) + 10;
-if(Math.random() > targ_accu && bool.skip == true) {
+		if(Math.random() > targ_accu && bool.skip == true) {
 			console.log("skipping question");
 			setTimeout(() => {set("test")}, 35000);
 		}
 		else {
+			console.log("This question will be answered in", rand, "seconds");
 			rand = rand * 1000;
-			console.log(rand);
 			interval.click = setTimeout(press, rand);
 		}
 	
