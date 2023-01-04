@@ -18,4 +18,4 @@ This version added some random deviation to the answer accuracy. At the beginnin
 Note: Due to the limited amount of questions in a regular 15 min session, the actual accuracy can deviate from the target accuracy by a couple percentage points. <br />
 
 v4.11: <br />
-The bot will now rescan the page if it cannot find a question to answer quickly enough. This will prevent getting stuck on long loading screens. It will also print the time (in seconds) until the question is answered directly to the console. <br />
+The bot will now rescan the page if it cannot find a question to answer quickly enough. This will prevent getting stuck on loading screens and new words. It will also print the time (in seconds) until the question is answered directly to the console. <br />
