@@ -19,3 +19,6 @@ Note: Due to the limited amount of questions in a regular 15 min session, the ac
 
 v4.11: <br />
 The bot will now rescan the page if it cannot find a question to answer quickly enough. This will prevent getting stuck on loading screens and new words. It will also print the time (in seconds) until the question is answered directly to the console. <br />
+
+v4.12: <br />
+Streamlined the console so the user won't get redundant messages. <br />
