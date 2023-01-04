@@ -61,12 +61,11 @@ function test() {
 	if(bool.bot == true) {
 		if(document.Pass) {
 			bool.bot = false;
-			console.log("Question answer found");
 			set("click");
 		} else if (document.getElementById("next-btn")) {
 			set("stop");
 			let x = document.querySelectorAll("#choice-section li");
-			console.log("next button");
+			console.log("Next button clicked");
 			x[0].click();
 			x[1].click();
 			x[2].click();
@@ -75,6 +74,7 @@ function test() {
 		} else if (no_content >= 1000) {
 			console.log("No question detected. Reattempting...");
 			no_content = 0
+			set("test");
 		} else {
 			console.log("Scanning for question");
 			no_content = no_content + 1				
@@ -85,7 +85,7 @@ function test() {
 		no_content = 0
 		let rand = Math.floor(Math.random() * (26 - 10)) + 10;
 		if(Math.random() > targ_accu && bool.skip == true) {
-			console.log("skipping question");
+			console.log("Skipping question");
 			setTimeout(() => {set("test")}, 35000);
 		}
 		else {
