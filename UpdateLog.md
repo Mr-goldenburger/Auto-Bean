@@ -1,11 +1,12 @@
+## Currently available versions are in bold <br />
+
 v3.0: <br />
 This version added the ability for the bot to skip new words. I built my versions of the bot using this code as a base. <br />
 
 v3.5: <br />
 This version made it so the bot defaulted to being on. It also added some QoL improvements with the buttons.  <br />
 
-v3.9: <br />
-This version was a remade version of the 3.5 build, updated to contain new console messages and fix some simple bugs.
+### v3.9: <br /> This version was a remade version of the 3.5 build, updated to contain new console messages and fix some simple bugs. <br />
 
 v4.0: <br />
 This was the first version with the 90% correct system. A little bit clunky and in need of some fixes.  <br />
@@ -24,5 +25,4 @@ Note: Due to the limited amount of questions in a regular 15 min session, the ac
 v4.11: <br />
 The bot will now rescan the page if it cannot find a question to answer quickly enough. This will prevent getting stuck on loading screens and new words. It will also print the time (in seconds) until the question is answered directly to the console. <br />
 
-v4.12: <br />
-Streamlined the console so the user won't get redundant messages. <br />
+### v4.12: <br /> Streamlined the console so the user won't get redundant messages. <br />
