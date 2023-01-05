@@ -1,14 +1,11 @@
-**Full Releases (Most stable, but typically more outdated iterations):**
-v3.9: <br />
-This version was a remade version of the 3.5 build, updated to contain new console messages and fix some simple bugs.
-
-**Production Versions (More commonly updated, tested and safe for use):**
-
 v3.0: <br />
 This version added the ability for the bot to skip new words. I built my versions of the bot using this code as a base. <br />
 
 v3.5: <br />
 This version made it so the bot defaulted to being on. It also added some QoL improvements with the buttons.  <br />
+
+v3.9: <br />
+This version was a remade version of the 3.5 build, updated to contain new console messages and fix some simple bugs.
 
 v4.0: <br />
 This was the first version with the 90% correct system. A little bit clunky and in need of some fixes.  <br />
