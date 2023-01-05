@@ -1,3 +1,9 @@
+**Full Releases (Most stable, but typically more outdated iterations):**
+v3.9: <br />
+This version was a remade version of the 3.5 build, updated to contain new console messages and fix some simple bugs.
+
+**Production Versions (More commonly updated, tested and safe for use):**
+
 v3.0: <br />
 This version added the ability for the bot to skip new words. I built my versions of the bot using this code as a base. <br />
 
@@ -12,6 +18,7 @@ This version shuffled around some button functions and improved the base 90% sys
 
 v4.02: <br />
 This version added new console status updates to make the operation of the bot easier to understand. <br />
+Note: With the introduction of v4.1, this version is basically useless because of its outdated systems. <br />
 
 v4.1: <br />
 This version added some random deviation to the answer accuracy. At the beginning of the session the bot picks a random percentage between 89% and 94% to target for question accuracy. The bot will get roughly the defined percentage of questions correct, adding some randomness to your session accuracy. Some console updates were also implemented. <br />
