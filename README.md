@@ -27,4 +27,4 @@ If you cannot open the console, you might want to consider switching to a 3rd pa
 <br />
 <br />
 
-The creator of this bot is not liable for any consequences a user may face as a result of its use. By using this bot you automatically agree to these terms. <br />
+The creator of this bot is not liable for any consequences a user may face as a result of its use. This bot is not intentended to be used for cheating your membean minutes, but rather as an example for what such a program might look like. By using this bot you automatically agree to these terms. <br />
