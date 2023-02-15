@@ -43,6 +43,7 @@ document.getElementById("div").appendChild(object.button1);
 document.getElementById("div").appendChild(object.button2);
 
 var no_content = 0
+
 var accu_reduction = 0
 var targ_accu = 0
 var disp_accu = 0
