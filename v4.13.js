@@ -43,17 +43,15 @@ document.getElementById("div").appendChild(object.button1);
 document.getElementById("div").appendChild(object.button2);
 
 var no_content = 0
-var accu = 0
+var accu_reduction = 0
 var targ_accu = 0
 var disp_accu = 0
-while (accu < .95) {
-	accu = Math.random();
-	if (accu > .95) {
-		targ_accu = accu - 0.06;
-		targ_accu = targ_accu.toFixed(2);
-		disp_accu = targ_accu * 100;
-		console.log("Session Accuracy Target is " + disp_accu +"%");
-  }
+while (targ_accu == 0){
+	accu_reduction = (Math.random() * 15);
+	targ_accu = 93 - accu_reduction;
+	disp_accu = targ_accu.toFixed(0);
+	targ_accu = targ_accu / 100;
+	console.log("Session Accuracy Target is " + disp_accu +"%");
 }
 
 
