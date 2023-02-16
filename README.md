@@ -6,7 +6,7 @@ Feel free to submit bug reports or troubleshooting help to the issues tab. <br /
 ### How To Use: <br />
 1. Open the most recent/desired version and copy the code <br />
     #### - v3.9 has 100% accuracy, making it straightforward but risky if your teacher checks your stats  <br />
-    #### - v4.13 gets bewteen 78% and 93% of questions correct, making it much less noticable but being more complex <br />
+    #### - v4.13 gets bewteen 78% and 93% of questions correct, making it less noticable AND giving you less new words <br />
 2. Open membean and once you are on the "session duration" screen, use Ctrl + Shift + I to open the console <br />
 3. Paste the code into the console but DO NOT PRESS ENTER <br />
 4. Begin your session <br />
