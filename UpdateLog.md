@@ -25,4 +25,6 @@ Note: Due to the limited amount of questions in a regular 15 min session, the ac
 v4.11: <br />
 The bot will now rescan the page if it cannot find a question to answer quickly enough. This will prevent getting stuck on loading screens and new words. It will also print the time (in seconds) until the question is answered directly to the console. <br />
 
-### v4.12: <br /> Streamlined the console so the user won't get redundant messages. <br />
+v4.12: <br /> Streamlined the console so the user won't get redundant messages. <br />
+
+### v4.13: <br /> While the previous accuracy range was between 91% and 86%, the time limitation on Membean meant that you would get pretty consistent 90's and 88's. To counter this, I made the accuracy range far more unpredictable (78%-93%), which makes it seem as if the user is actively learning new words and mastering them. This change also has the upside of giving you less new words, which is nice. Finally, I restructured the way that the accuracy target is determined, because honestly the old method sucked ass. <br />
