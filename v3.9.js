@@ -42,6 +42,7 @@ document.body.appendChild(object.div);
 document.getElementById("div").appendChild(object.button1);
 document.getElementById("div").appendChild(object.button2);
 
+var no_content = 0
 
 function test() {
 	if(bool.bot == true) {
@@ -70,11 +71,9 @@ function test() {
 	if(type == "click") {//waits time to click
 		no_content = 0
 		let rand = Math.floor(Math.random() * (26 - 10)) + 10;
-		console.log("This question will be answered in", rand, "seconds");
-		rand = rand * 1000;
-		interval.click = setTimeout(press, rand);
-  }
-	
+        console.log("This question will be answered in", rand, "seconds");
+        rand = rand * 1000;
+        interval.click = setTimeout(press, rand);
 	} else if (type == "test") {//starts testing after 2 seconds
 		interval.deltest = setTimeout(function x(){bool.bot = true;}, 2000);
 	} else if (type == "stop") { //CLEAR ALL TIMEOUTS AND INTERVALS
@@ -82,6 +81,7 @@ function test() {
 		clearTimeout(interval.deltest);
 		bool.bot = false; 
 	}
+
 } function press() {
 	document.Pass.click();
 	console.log("Question answered");
