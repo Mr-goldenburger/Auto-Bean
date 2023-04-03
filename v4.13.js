@@ -74,8 +74,7 @@ function test() {
 			console.log("No question detected. Resetting system...")
 			clearTimeout(interval.click);
 			clearTimeout(interval.deltest);
-			no_content = 0
-			setTimeout(() => {set("test")}, 5000);
+			setTimeout(() => no_content = 0, 5000);
 		} else {
 			console.log("Scanning for question");
 			no_content = no_content + 1				
