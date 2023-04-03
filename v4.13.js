@@ -57,8 +57,9 @@ while (targ_accu == 0){
 
 
 function test() {
+	no_content = 0
 	if(bool.bot == true) {
-		if(document.Pass) {
+		 if(document.Pass) {
 			bool.bot = false;
 			set("click");
 		} else if (document.getElementById("next-btn")) {
@@ -72,7 +73,6 @@ function test() {
 			set("test");
 		} else if (no_content >= 1000) {
 			console.log("No question detected. Reattempting...");
-			no_content = 0
 			set("test");
 		} else {
 			console.log("Scanning for question");
@@ -80,7 +80,7 @@ function test() {
 		}
 	}
 } function set(type) {
-	if(type == "click") {//waits time to click
+	if(type == "click") { //waits time to click
 		no_content = 0
 		let rand = Math.floor(Math.random() * (26 - 10)) + 10;
 		if(Math.random() > targ_accu && bool.skip == true) {
