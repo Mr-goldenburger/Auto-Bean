@@ -57,9 +57,8 @@ while (targ_accu == 0){
 
 
 function test() {
-	no_content = 0
 	if(bool.bot == true) {
-		 if(document.Pass) {
+		if(document.Pass) {
 			bool.bot = false;
 			set("click");
 		} else if (document.getElementById("next-btn")) {
@@ -72,8 +71,11 @@ function test() {
 			document.getElementById("next-btn").click();
 			set("test");
 		} else if (no_content >= 1000) {
-			console.log("No question detected. Reattempting...");
-			set("test");
+			console.log("No question detected. Resetting system...")
+			clearTimeout(interval.click);
+			clearTimeout(interval.deltest);
+			no_content = 0
+			setTimeout(() => {set("test")}, 5000);
 		} else {
 			console.log("Scanning for question");
 			no_content = no_content + 1				
