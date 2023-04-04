@@ -1,4 +1,4 @@
-### v4.50 has released! Open -UpdateLog.md and scroll down to see what is new! <br />
+### v4.50 has released! Open UpdateLog.md and scroll down to see what is new! <br />
 This is a bot used to automate the process of Membean, the online vocab tester. <br />
 This bot is only to be used on training sessions, not quizzes. <br />
 Feel free to submit bug reports or troubleshooting help to the issues tab. <br />
