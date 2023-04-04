@@ -100,7 +100,7 @@ function set(type) {
 			setTimeout(() => {set("test")}, time);
 		}
 		else if (alotted_time()) {
-			let time = alotted_time() - 2;
+			let time = alotted_time() - 5;
 			console.log("This question will be answered in", time, "seconds");
 			time = time * 1000;
 			interval.click = setTimeout(press, time);
