@@ -6,7 +6,7 @@ This version added the ability for the bot to skip new words. I built my version
 v3.5: <br />
 This version made it so the bot defaulted to being on. It also added some QoL improvements with the buttons.  <br />
 
-### v3.9: <br /> This version was a remade version of the 3.5 build, updated to contain new console messages and fix some simple bugs. <br />
+v3.9: <br /> This version was a remade version of the 3.5 build, updated to contain new console messages and fix some simple bugs. <br />
 
 v4.0: <br />
 This was the first version with the 90% correct system. A little bit clunky and in need of some fixes.  <br />
@@ -27,4 +27,6 @@ The bot will now rescan the page if it cannot find a question to answer quickly 
 
 v4.12: <br /> Streamlined the console so the user won't get redundant messages. <br />
 
-### v4.13: <br /> While the previous accuracy range was between 94% and 89%, the time limitation on Membean meant that you would get pretty consistent 90's and 88's. To counter this, I made the accuracy range far more unpredictable (78%-93%), which makes it seem as if the user is actively learning new words and mastering them. This change also has the upside of giving you less new words, which is nice. Finally, I restructured the way that the accuracy target is determined, because honestly the old method sucked ass. <br />
+v4.13: <br /> While the previous accuracy range was between 94% and 89%, the time limitation on Membean meant that you would get pretty consistent 90's and 88's. To counter this, I made the accuracy range far more unpredictable (78%-93%), which makes it seem as if the user is actively learning new words and mastering them. This change also has the upside of giving you less new words, which is nice. Finally, I restructured the way that the accuracy target is determined, because honestly the old method sucked ass. <br />
+
+v4.50: <br /> Redesigned how the bot times answering the questions, the bot should work much smoother now because the time it takes to answer a question is directly related to how much time you are given, as opposed to the system before which was random. I think this should help iron out some bugs I've been hearing about and as a nice bonus you should now be getting less new words. <br />
