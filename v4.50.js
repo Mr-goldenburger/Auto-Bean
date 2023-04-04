@@ -61,7 +61,8 @@ function test() {
 		if(document.Pass) {
 			bool.bot = false;
 			set("click");
-		} else if (document.getElementById("next-btn")) {
+		} 
+		else if (document.getElementById("next-btn")) {
 			set("stop");
 			let x = document.querySelectorAll("#choice-section li");
 			console.log("Next button clicked");
@@ -70,38 +71,67 @@ function test() {
 			x[2].click();
 			document.getElementById("next-btn").click();
 			set("test");
-		} else if (no_content >= 1000) {
+		} 
+		else if (no_content >= 1000) {
 			console.log("No question detected. Resetting system...")
-			clearTimeout(interval.click);
-			clearTimeout(interval.deltest);
-			setTimeout(() => no_content = 0, 5000);
-		} else {
+			set("stop");
+			let x = document.querySelectorAll("#choice-section li");
+			console.log("Next button clicked");
+			x[0].click();
+			x[1].click();
+			x[2].click();
+			document.getElementById("next-btn").click();
+			set("test");
+		} 
+		else {
 			console.log("Scanning for question");
 			no_content = no_content + 1				
 		}
 	}
-} function set(type) {
+} 
+
+
+function set(type) {
 	if(type == "click") { //waits time to click
 		no_content = 0
-		let rand = Math.floor(Math.random() * (26 - 10)) + 10;
 		if(Math.random() > targ_accu && bool.skip == true) {
+			let time = (alotted_time() + 10) * 1000;
 			console.log("Skipping question");
-			setTimeout(() => {set("test")}, 35000);
+			setTimeout(() => {set("test")}, time);
+		}
+		else if (alotted_time()) {
+			let time = alotted_time() - 2;
+			console.log("This question will be answered in", time, "seconds");
+			time = time * 1000;
+			interval.click = setTimeout(press, time);
 		}
 		else {
-			console.log("This question will be answered in", rand, "seconds");
-			rand = rand * 1000;
-			interval.click = setTimeout(press, rand);
+			console.log("This question will be answered in", 30, "seconds");
+			interval.click = setTimeout(press, 30000);
 		}
-	
-	} else if (type == "test") {//starts testing after 2 seconds
+	} 
+	else if (type == "test") {//starts testing after 2 seconds
 		interval.deltest = setTimeout(function x(){bool.bot = true;}, 2000);
-	} else if (type == "stop") { //CLEAR ALL TIMEOUTS AND INTERVALS
+	} 
+	else if (type == "stop") { //CLEAR ALL TIMEOUTS AND INTERVALS
 		clearTimeout(interval.click);
 		clearTimeout(interval.deltest);
 		bool.bot = false; 
 	}
-} function press() {
+
+
+	function alotted_time(){
+		try{
+			const timerContainer = document.getElementById('timer-container');
+			const timeoutValue = timerContainer.getAttribute('data-timeout');
+			return timeoutValue
+		}
+		catch {TypeError}
+	}
+} 
+
+
+function press() {
 	document.Pass.click();
 	console.log("Question answered");
 	set("test");
@@ -123,7 +153,10 @@ function start() {
 		console.log("Bot Active");
 		document.getElementById("button1").innerHTML = "On";
 	}
-} function skip() {
+
+} 
+
+function skip() {
 	if(bool.skip == true) {
 		bool.skip = false;
 		console.log("Answering all questions");
