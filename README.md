@@ -1,12 +1,11 @@
+#### v4.50 has released! Open UpdateLog.md and scroll down to see what is new! <br />
 This is a bot used to automate the process of Membean, the online vocab tester. <br />
 This bot is only to be used on training sessions, not quizzes. <br />
 Feel free to submit bug reports or troubleshooting help to the issues tab. <br />
 <br />
 
 ### How To Use: <br />
-1. Open the most recent/desired version and copy the code <br />
-    #### - v3.9 has 100% accuracy, making it straightforward but risky if your teacher checks your stats  <br />
-    #### - v4.13 gets between 78% and 93% of questions correct, making it less noticable AND giving you less new words <br />
+1. Open v4.50 and copy all code <br />
 2. Open membean and once you are on the "session duration" screen, use Ctrl + Shift + I to open the console <br />
 3. Paste the code into the console but DO NOT PRESS ENTER <br />
 4. Begin your session <br />
@@ -25,6 +24,7 @@ Tested versions are posted on the main branch (Alongside the ReadMe and UpdateLo
 
 Browser compatibility:  <br />
 If you cannot open the console, you might want to consider switching to a 3rd party browser such as Opera GX to avoid restrictions set by system admins. <br />
+I also recommend logging out of your school account from the small profile picture at the very top right. <br />
 <br />
 <br />
 
