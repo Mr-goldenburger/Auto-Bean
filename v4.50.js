@@ -58,35 +58,38 @@ while (targ_accu == 0){
 
 function test() {
 	if(bool.bot == true) {
-		if(document.Pass) {
-			bool.bot = false;
-			set("click");
-		} 
-		else if (document.getElementById("next-btn")) {
-			set("stop");
-			let x = document.querySelectorAll("#choice-section li");
-			console.log("Next button clicked");
-			x[0].click();
-			x[1].click();
-			x[2].click();
-			document.getElementById("next-btn").click();
-			set("test");
-		} 
-		else if (no_content >= 1000) {
-			console.log("No question detected. Resetting system...")
-			set("stop");
-			let x = document.querySelectorAll("#choice-section li");
-			console.log("Next button clicked");
-			x[0].click();
-			x[1].click();
-			x[2].click();
-			document.getElementById("next-btn").click();
-			set("test");
-		} 
-		else {
-			console.log("Scanning for question");
-			no_content = no_content + 1				
+		try{
+			if(document.Pass) {
+				bool.bot = false;
+				set("click");
+			} 
+			else if (document.getElementById("next-btn")) {
+				set("stop");
+				let x = document.querySelectorAll("#choice-section li");
+				console.log("Next button clicked");
+				x[0].click();
+				x[1].click();
+				x[2].click();
+				document.getElementById("next-btn").click();
+				set("test");
+			} 
+			else if (no_content >= 1000) {
+				console.log("No question detected. Resetting system...")
+				set("stop");
+				let x = document.querySelectorAll("#choice-section li");
+				console.log("Next button clicked");
+				x[0].click();
+				x[1].click();
+				x[2].click();
+				document.getElementById("next-btn").click();
+				set("test");
+			} 
+			else {
+				console.log("Scanning for question");
+				no_content = no_content + 1				
+			}
 		}
+		catch {TypeError}
 	}
 } 
 
@@ -94,21 +97,24 @@ function test() {
 function set(type) {
 	if(type == "click") { //waits time to click
 		no_content = 0
-		if(Math.random() > targ_accu && bool.skip == true) {
-			let time = (alotted_time() + 10) * 1000;
-			console.log("Skipping question");
-			setTimeout(() => {set("test")}, time);
+		try{
+			if(Math.random() > targ_accu && bool.skip == true) {
+				let time = (alotted_time() + 10) * 1000;
+				console.log("Skipping question");
+				setTimeout(() => {set("test")}, time);
+			}
+			else if (alotted_time()) {
+				let time = alotted_time() - 8;
+				console.log("This question will be answered in", time, "seconds");
+				time = time * 1000;
+				interval.click = setTimeout(press, time);
+			}
+			else {
+				console.log("This question will be answered in", 30, "seconds");
+				interval.click = setTimeout(press, 30000);
+			}
 		}
-		else if (alotted_time()) {
-			let time = alotted_time() - 5;
-			console.log("This question will be answered in", time, "seconds");
-			time = time * 1000;
-			interval.click = setTimeout(press, time);
-		}
-		else {
-			console.log("This question will be answered in", 30, "seconds");
-			interval.click = setTimeout(press, 30000);
-		}
+		catch{TypeError}
 	} 
 	else if (type == "test") {//starts testing after 2 seconds
 		interval.deltest = setTimeout(function x(){bool.bot = true;}, 2000);
@@ -132,9 +138,14 @@ function set(type) {
 
 
 function press() {
-	document.Pass.click();
-	console.log("Question answered");
-	set("test");
+	try{
+		document.Pass.click();
+		console.log("Question answered");
+		set("test");
+	}
+	catch {TypeError}{
+		set("test");
+	}
 	
 } 
 
