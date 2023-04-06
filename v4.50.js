@@ -99,9 +99,8 @@ function set(type) {
 		no_content = 0
 		try{
 			if(Math.random() > targ_accu && bool.skip == true) {
-				let time = (alotted_time() + 10) * 1000;
 				console.log("Skipping question");
-				setTimeout(() => {set("test")}, time);
+				setTimeout(() => {set("test")}, 40000);
 			}
 			else if (alotted_time()) {
 				let time = alotted_time() - 8;
