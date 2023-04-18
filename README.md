@@ -6,7 +6,7 @@ Feel free to submit bug reports or troubleshooting help to the issues tab. <br /
 
 ## How To Use: <br />
 1. Open v4.50 and copy all code <br />
-2. Open membean and once you are on the "session duration" screen, use Ctrl + Shift + I (On Windows) or Command + Option + I (On Mac) to open the console <br />
+2. Open membean and once you are on the "session duration" screen, use Ctrl + Shift + I (Windows) or Command + Option + I (Mac) to open the console <br />
 3. Paste the code into the console but DO NOT PRESS ENTER <br />
 4. Begin your session <br />
 5. As soon as you begin the session, click into the console and press enter. The bot will automatically activate and will start reporting info to the console <br />
