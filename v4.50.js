@@ -76,12 +76,7 @@ function test() {
 			else if (no_content >= 1000) {
 				console.log("No question detected. Resetting system...")
 				set("stop");
-				let x = document.querySelectorAll("#choice-section li");
-				console.log("Next button clicked");
-				x[0].click();
-				x[1].click();
-				x[2].click();
-				document.getElementById("next-btn").click();
+				no_content = 0;
 				set("test");
 			} 
 			else {
